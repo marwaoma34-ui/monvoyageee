@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" name="El Omari Marwa">
+    <title>Mon voyage MAROC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue dans notre guide </b></h1>
+        <p>Cliquez sur une ville pour découvrir ses informatins</p>
+    </header>
+
+    <!-- Section des images cliquables -->
+    <section class="villes">
+        <img src="https://i.postimg.cc/ncc3RKDn/Jmaalefna2.jpg" alt="Marrakech" onclick="afficherVille('marrakech')">
+        <img src="https://i.postimg.cc/FssTWbLQ/dakhela2.jpg" alt="Dakhla" onclick="afficherVille('dakhla')">
+        <img src="https://i.postimg.cc/TYYt7jDf/Saidia2.jpg" alt="Al Hoceima" onclick="afficherVille('hoceima')">
+        <img src="https://i.postimg.cc/5NNs75CV/chefchaouen2.jpg" alt="Chefchaouen" onclick="afficherVille('chefchaouen')">
+        <img src="https://i.postimg.cc/L66xCkZc/Agadir2.jpg" alt="Agadir" onclick="afficherVille('agadir')">
+        <img src="https://i.postimg.cc/4NNWLv9k/ifrane.jpg" alt="Ifrane" onclick="afficherVille('ifrane')">
+        <img src="https://i.postimg.cc/TYYt7jDf/Saidia2.jpg" alt="Saïdia" onclick="afficherVille('saidia')">
+        <img src="https://i.postimg.cc/xTT6xGzY/rabat.jpg" alt="Rabat" onclick="afficherVille('rabat')">
+    </section>
+
+    <!-- Zone infos dynamique -->
+    <section id="infosVille" class="infos" style="display:none;">
+        <img id="imageVille" src="" alt="">
+        <div>
+            <h2 id="nomVille"></h2>
+            <p id="description"></p>
+            <p id="activites"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Section Contact -->
+<section id="contact" style="margin-top:50px; padding:30px; background: rgba(0,0,0,0.4); border-radius:10px; max-width:800px; margin-left:auto; margin-right:auto;">
+    <h2>Contactez-nous</h2>
+    <p>Pour plus d’informations ou pour organiser un voyage, contactez-nous :</p>
+    <p>Email : <a href="agencytrav@monvoyage.com" style="color:#c79d9d; text-decoration:underline;">info@monvoyage.com</a></p>
+    <p>Téléphone : <a href="tel:+212612345678" style="color:#c79d9d; text-decoration:underline;">+212 612 345 678</a></p>
+</section>
+<form action="#" method="post" style="margin-top:20px;">
+    <input type="text" name="nom" placeholder="Votre nom" required style="width:50%; padding:10px; margin-bottom:10px; border-radius:5px;">
+    <input type="email" name="email" placeholder="Votre email" required style="width:50%; padding:10px; margin-bottom:10px; border-radius:5px;">
+    <textarea name="message" placeholder="Votre message" required style="width:50%; padding:8px; margin-bottom:10px; border-radius:5px;"></textarea>
+    <button type="submit" style="padding:5px 10px; border:none; border-radius:2px; background:#961e1e; color:#000; cursor:pointer;">Envoyer</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2e7d32, #c62828);
+    color: white;
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.villes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.villes img {
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.villes img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Zone infos : image à gauche, texte à droite */
+.infos {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.infos img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.infos div {
+    text-align: left;
+}
+
+.infos h2 {
+    margin-top: 0;
+}
+#contact h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#contact p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#contact a:hover {
+    color: #ffeb3b;
+}
+
